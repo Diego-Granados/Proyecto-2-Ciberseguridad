@@ -22,3 +22,5 @@ _start:
 
 
 ; /bin//sh = 0x2f62696e2f2f7368 
+; https://www.rapidtables.com/convert/number/ascii-to-hex.html
+; https://xor.pw/#
