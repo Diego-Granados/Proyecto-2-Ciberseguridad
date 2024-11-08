@@ -22,15 +22,8 @@ int main() {
     size_t decrypted_length = 0;
 
     while (fread(&byte, sizeof(byte), 1, flag) == 1) {
-
-        int rand_num1 = rand();
+        // Aqui se pone el decryptor
         
-        int rand_num2 = rand() & 7;  
-        
-        byte = (byte >> rand_num2) | (byte << (8 - rand_num2) & 0xFF);
-        byte = (byte ^ rand_num1) & 0xFF;
-        
-        decrypted_flag[decrypted_length++] = byte;
     }
     
     fclose(flag);
