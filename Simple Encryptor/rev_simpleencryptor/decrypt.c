@@ -22,7 +22,7 @@ int main() {
     size_t decrypted_length = 0;
 
     while (fread(&byte, sizeof(byte), 1, flag) == 1) {
-        // Aqui se pone el decryptor
+        // Aqui se pone el decryptors
         
     }
     
