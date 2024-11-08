@@ -30,6 +30,15 @@ for byte in file_data:
     byte = (byte ^ rand_num1) & 0XFF
     decrypted_flag.append(byte)
 
+# int rand_num1 = rand();
+        
+#         int rand_num2 = rand() & 7;  
+        
+#         byte = (byte >> rand_num2) | (byte << (8 - rand_num2) & 0xFF);
+#         byte = (byte ^ rand_num1) & 0xFF;
+        
+#         decrypted_flag[decrypted_length++] = byte;
+
 try:
     processed_string = decrypted_flag.decode('utf-8')
 except:
